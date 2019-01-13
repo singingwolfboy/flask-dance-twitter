@@ -15,7 +15,7 @@ app.register_blueprint(twitter_bp, url_prefix="/login")
 def index():
     if not twitter.authorized:
         return redirect(url_for("twitter.login"))
-    resp = twitter.get("account/settings.json")
+    resp = twitter.get("account/verify_credentials.json")
     assert resp.ok
     return "You are @{screen_name} on Twitter".format(screen_name=resp.json()["screen_name"])
 
