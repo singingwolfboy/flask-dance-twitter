@@ -69,7 +69,7 @@ If you'd prefer to run this locally on your computer, you can do that as well.
 
 Step 1: Get OAuth credentials from Twitter
 -----------------------------------------
-Visit ttps://developer.twitter.com/en/apps to register an
+Visit https://developer.twitter.com/en/apps to register an
 app on Twitter. You must set the application's authorization
 callback URL to ``http://127.0.0.1:5000/login/twitter/authorized``.
 

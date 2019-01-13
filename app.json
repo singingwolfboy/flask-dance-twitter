@@ -11,13 +11,13 @@
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
-    "TWITTER_OAUTH_APP_ID": {
+    "TWITTER_OAUTH_API_KEY": {
       "description": "The OAuth client ID for your application, assigned by Twitter",
-      "value": "app-id-goes-here"
+      "value": "api-id-goes-here"
     },
-    "TWITTER_OAUTH_APP_SECRET": {
+    "TWITTER_OAUTH_API_SECRET": {
       "description": "The OAuth client secret for your application, assigned by Twitter",
-      "value": "app-secret-goes-here"
+      "value": "api-secret-goes-here"
     }
   }
 }
