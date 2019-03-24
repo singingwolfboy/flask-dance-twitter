@@ -113,7 +113,7 @@ Step 4: Run your app and login with Twitter!
 --------------------------------------------
 If you're setting environment variables manually, run your app using Python::
 
-    python twitter.py
+    FLASK_APP=twitter.py flask run
 
 If you're using a ``.env`` file for your environment variables, install `foreman`_
 and use that to run your app::
