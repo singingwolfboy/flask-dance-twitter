@@ -4,8 +4,8 @@ from flask_dance.contrib.twitter import make_twitter_blueprint, twitter
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "supersekrit")
-app.config["TWITTER_OAUTH_API_KEY"] = os.environ.get("TWITTER_OAUTH_API_KEY")
-app.config["TWITTER_OAUTH_API_SECRET"] = os.environ.get("TWITTER_OAUTH_API_SECRET")
+app.config["TWITTER_OAUTH_CLIENT_ID"] = os.environ.get("TWITTER_OAUTH_CLIENT_ID")
+app.config["TWITTER_OAUTH_CLIENT_SECRET"] = os.environ.get("TWITTER_OAUTH_CLIENT_SECRET")
 twitter_bp = make_twitter_blueprint()
 app.register_blueprint(twitter_bp, url_prefix="/login")
 

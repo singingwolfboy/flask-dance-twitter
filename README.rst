@@ -1,5 +1,5 @@
 Flask-Dance Example App: Twitter Edition
-=======================================
+========================================
 
 This repository provides an example of how to use `Flask-Dance`_ to connect
 to `Twitter`_ as an OAuth client. The example code is in ``twitter.py`` --
@@ -49,14 +49,14 @@ You'll need click the "Reveal Config Vars" button to see which variables
 are available, and then the "Edit" button to allow you to change these variables.
 
 Take the app ID you got from Twitter, and paste it into the "VALUE" field
-next to the ``TWITTER_OAUTH_APP_ID`` field, replacing the dummy value that
+next to the ``TWITTER_OAUTH_CLIENT_ID`` field, replacing the dummy value that
 was there before. Similarly, take the app secret you got from Twitter,
-and paste it into the "VALUE" field next to the ``TWITTER_OAUTH_APP_SECRET``
+and paste it into the "VALUE" field next to the ``TWITTER_OAUTH_CLIENT_SECRET``
 field, replacing the dummy value that was there before.
 Click the "Save" button when you're done.
 
 Step 4: Visit your app and login with Twitter!
----------------------------------------------
+----------------------------------------------
 Your app name from Heroku will determine the URL that your app is running on:
 the URL will be ``https://APPNAME.herokuapp.com``. For example, if Heroku
 assigned you an app name of ``peaceful-lake``, your app will be available at
@@ -68,7 +68,7 @@ Local Installation
 If you'd prefer to run this locally on your computer, you can do that as well.
 
 Step 1: Get OAuth credentials from Twitter
------------------------------------------
+------------------------------------------
 Visit https://developer.twitter.com/en/apps to register an
 app on Twitter. You must set the application's authorization
 callback URL to ``http://127.0.0.1:5000/login/twitter/authorized``.
@@ -96,8 +96,9 @@ Many applications use `environment variables`_ for configuration, and
 Flask-Dance is no exception. You'll need to set the following environment
 variables:
 
-* ``TWITTER_OAUTH_APP_ID``: set this to the app ID you got from Twitter.
-* ``TWITTER_OAUTH_APP_SECRET``: set this to the app secret you got from Twitter.
+* ``TWITTER_OAUTH_CLIENT_ID``: set this to the app ID you got from Twitter.
+* ``TWITTER_OAUTH_CLIENT_SECRET``: set this to the app secret you got
+  from Twitter.
 * ``OAUTHLIB_INSECURE_TRANSPORT``: set this to ``true``. This indicates that
   you're doing local testing, and it's OK to use HTTP instead of HTTPS for
   OAuth. You should only do this for local testing.
