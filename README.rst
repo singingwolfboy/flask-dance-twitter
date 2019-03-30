@@ -49,7 +49,7 @@ You'll need click the "Reveal Config Vars" button to see which variables
 are available, and then the "Edit" button to allow you to change these variables.
 
 Take the app ID you got from Twitter, and paste it into the "VALUE" field
-next to the ``TWITTER_OAUTH_CLIENT_ID`` field, replacing the dummy value that
+next to the ``TWITTER_OAUTH_CLIENT_KEY`` field, replacing the dummy value that
 was there before. Similarly, take the app secret you got from Twitter,
 and paste it into the "VALUE" field next to the ``TWITTER_OAUTH_CLIENT_SECRET``
 field, replacing the dummy value that was there before.
@@ -96,7 +96,7 @@ Many applications use `environment variables`_ for configuration, and
 Flask-Dance is no exception. You'll need to set the following environment
 variables:
 
-* ``TWITTER_OAUTH_CLIENT_ID``: set this to the app ID you got from Twitter.
+* ``TWITTER_OAUTH_CLIENT_KEY``: set this to the app ID you got from Twitter.
 * ``TWITTER_OAUTH_CLIENT_SECRET``: set this to the app secret you got
   from Twitter.
 * ``OAUTHLIB_INSECURE_TRANSPORT``: set this to ``true``. This indicates that
